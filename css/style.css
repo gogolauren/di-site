@@ -349,10 +349,11 @@ CONTENT
   position:relative;
   float:left;
 }
-.full-column{
-  width:100%;
-  position:relative;
-  float:left;
+
+.full-column p{
+width: 100% !important;
+ font-size:16px !important;
+ color:#000000 !important;
 }    /*new---------------------------------------*/
 
 .one-column p{
@@ -361,6 +362,8 @@ CONTENT
 
 .two-column p{
   width:100% !important;
+  font-size:16px !important;
+  color:#000000 !important;
 }
 
 .clear{
@@ -540,25 +543,25 @@ li.grid-item{
 }
 
 .grid-hover h1{
-  font-size:23px;
-  bottom:80px;
-  left:40px;
+  font-size:18px;
+  bottom:30px;
+  left:8px;
   position:absolute;
   text-transform:uppercase;
   color:#000000;
   letter-spacing:1px;
-  font-weight:900;
-  line-height:50px;
+  font-weight:400;
+  line-height:20px;
 }
 
 .grid-hover p{
   font-size:13px;
-  bottom:40px;
-  left:40px;
+  bottom:10px;
+  left:8px;
   position:absolute;
   color:#686868;
   letter-spacing:1px;
-  font-weight:400;
+  font-weight:700;
   line-height:50px;
 }
 
