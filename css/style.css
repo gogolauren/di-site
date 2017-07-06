@@ -329,7 +329,7 @@ CONTENT
   position:relative; 
   width:100%; 
   top:0; 
-  height:400px; 
+  height:100%; 
   background: url('../img/full/full.jpg') center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -361,6 +361,13 @@ width: 100%;
 width: 100% !important;
  font-size:16px !important;
  color:#000000 !important;
+}    /*new---------------------------------------*/
+
+.twothirds-column p{
+width: 66.66% !important;
+position:relative;
+float:left;
+color:#000000 !important;
 }    /*new---------------------------------------*/
 
 .content .text-intro .full-column h2{
@@ -461,13 +468,13 @@ HOME SIDEBAR
 .home-sidebar{
   top:0;
   position:absolute;
-  width:33.3333%;
+  width:33.333%;
   right:0;
   height:100%;
   background:#f4f4f4;
-  z-index:9;
+  z-index:-1;
   overflow:hidden;
-  background-size:100%;
+  background-size:cover;
 }
 
 .parallax{
@@ -558,8 +565,8 @@ li.grid-item{
 }
 
 .grid-hover h1{
-  font-size:18px;
-  bottom:30px;
+  font-size:16px;
+  bottom:32px;
   left:8px;
   position:absolute;
   text-transform:uppercase;
@@ -571,7 +578,7 @@ li.grid-item{
 
 .grid-hover p{
   font-size:13px;
-  bottom:10px;
+  bottom:1px;
   left:8px;
   position:absolute;
   color:#686868;
