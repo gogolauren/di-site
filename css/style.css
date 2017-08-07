@@ -378,6 +378,14 @@ text-align: center;
  color: !important;
 } /*new---------------------------------------*/
 
+
+.two-in-aline { 
+width: 50%;
+float:left;
+position:relative;
+
+}/*new---------------------------------------*/
+
 .one-column p{
   width:70% !important;
 }
