@@ -178,7 +178,8 @@ header.boxed{
   height:80px;
   z-index:9999;
   display:none;
-  background:none;
+  background:white;
+  display: block;
   top:0;
     -webkit-transition: background 0.2s ease-in;
 	-moz-transition: background 0.2s ease-in;
@@ -415,7 +416,7 @@ position:relative;
 
 .content .text-intro h1{
   font-size:43px;
-  width:40%;
+  
   text-transform:uppercase;
   color:#000000;
   font-weight:900;
