@@ -508,13 +508,17 @@ PORTFOLIO GRID
 }
 
 .prev-next a{
-  color:black;
-  font-weight:500;
-  padding-bottom: 15px;
+    color: darkblue;
+    font-weight: 600;
+    font-family: sans-serif;
+    font-style: oblique; 
+    padding: 5px;
+    
 }
 
 .prev-next a:hover{
-  border-bottom:1px solid black;
+  /*border:2px dashed darkblue;*/
+    background-color: lightblue;
 }
 
 .prev-button{
