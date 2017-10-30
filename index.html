@@ -23,6 +23,31 @@
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
+     <script type="text/javascript">  
+        
+            var images = new Array()  
+            function preload() {  
+                for (i = 0; i < preload.arguments.length; i++) {  
+                    images[i] = new Image()  
+                    images[i].src = preload.arguments[i]  
+                }  
+            }  
+            preload(  
+                "img/portfolio/web2.png",  
+                "img/portfolio/mac.jpg",  
+                "img/portfolio/old.png",
+                "img/portfolio/recipe.jpg",
+                "img/portfolio/education.jpg",
+                "img/portfolio/basketball.jpg",
+                "img/portfolio/park.jpg",
+                "img/portfolio/brain.jpg",
+                "img/portfolio/datav.png",
+                "img/xdtreelow.jpg",
+                "img/green.jpg"
+                
+            )  
+         
+    </script>  
   
 </head>
 
@@ -69,7 +94,36 @@
 
 <ul class="portfolio-grid" id="portfolio-sidebar" style="position: relative; height: 823px;list-style-type: none;">
 
-  
+  <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
+    <img src="img/portfolio/web2.png">
+      <a class="ajax-link" href="single-web.html">  
+        <div class="grid-hover">
+          <h1>WatershedInfo.umd.edu -- A Website Design</h1>
+          <!--<p>Branding</p>-->
+        </div>
+      </a>      
+  </li>    
+    
+   <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
+    <img src="img/portfolio/mac.jpg">
+      <a class="ajax-link" href="single-mac.html">  
+        <div class="grid-hover">
+          <h1>A TOUCH OF BRILLIANCE? - Apple's MacBook Pro Touch Bar Usability Test</h1>
+          <!--<p>Branding</p>-->
+        </div>
+      </a>      
+  </li>    
+    
+ <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
+    <img src="img/portfolio/old.png">
+      <a class="ajax-link" href="single-knowhow.html">  
+        <div class="grid-hover">
+          <h1>KNOW<strong>HOW</strong> -- making web applications accessible to seniors</h1>
+          <!--<p>Branding</p>-->
+        </div>
+      </a>      
+  </li>
+    
   <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
     <img src="img/portfolio/recipe.jpg">
       <a class="ajax-link" href="single-recipe.html">  
@@ -80,8 +134,6 @@
         </div>
       </a>  
   </li>
-
-
 
 <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
     <img src="img/portfolio/education.jpg">
@@ -103,37 +155,6 @@
         </div>
       </a>      
   </li>  
- 
-    <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
-    <img src="img/portfolio/mac.jpg">
-      <a class="ajax-link" href="single-mac.html">  
-        <div class="grid-hover">
-          <h1>A TOUCH OF BRILLIANCE? - Apple's MacBook Pro Touch Bar Usability Test</h1>
-          <!--<p>Branding</p>-->
-        </div>
-      </a>      
-  </li>  
-    
-  <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
-    <img src="img/portfolio/web2.png">
-      <a class="ajax-link" href="single-web.html">  
-        <div class="grid-hover">
-          <h1>WatershedInfo.umd.edu -- A Website Design</h1>
-          <!--<p>Branding</p>-->
-        </div>
-      </a>      
-  </li>    
-   
-
-  <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
-    <img src="img/portfolio/old.png">
-      <a class="ajax-link" href="single-knowhow.html">  
-        <div class="grid-hover">
-          <h1>KNOW<strong>HOW</strong> -- making web applications accessible to seniors</h1>
-          <!--<p>Branding</p>-->
-        </div>
-      </a>      
-  </li>
 
   <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
     <img src="img/portfolio/park.jpg">
@@ -219,10 +240,9 @@
   <script src="js/masonry.pkgd.min.js" type="text/javascript"></script>  
   <script src="js/imagesloaded.pkgd.min.js" type="text/javascript"></script>    
   <script src="js/jquery.jkit.1.2.16.min.js"></script>
-  
-  
-    
   <script src="js/script.js" type="text/javascript"></script>
+   
+  
 
 
 </body>
