@@ -272,7 +272,7 @@ header .logo > a{
   font-weight:800;
   float:left;
   line-height:80px;
-  padding-right:40px;
+  padding-right:20px;
   border-bottom: 1px solid #f1f1f1;
 }
 
@@ -386,6 +386,38 @@ float:left;
 position:relative;
 
 }/*new---------------------------------------*/
+
+#spotlight{
+  /*position:relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;*/
+    background-color: rgba(255, 0, 0, 0.3);
+    background-size:cover;
+    z-index: -1;
+    padding-left: 400px;
+    padding-right: 400px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    margin-left: -400px;
+    margin-right: -400px;
+}
+
+.topleft {
+    position: relative;
+    top: -20px;
+    left: -40px;
+    width:100px;
+    text-align: center;
+    font-weight: bolder;
+    font-family: cursive;
+    padding: 5px;
+    background-color: crimson;
+    border-radius: 8px;
+    font-size: 20px;
+    z-index: 99;
+}
 
 .one-column p{
   width:70% !important;

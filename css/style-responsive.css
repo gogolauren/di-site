@@ -27,7 +27,7 @@
 
   /*
   **************************
-  Portfolio Grid
+  Portfolio Grid index页面
   **************************
   */
 
@@ -39,7 +39,7 @@
 
   .portfolio-grid{
 
-    width:1030px;
+    width:1030px; 
 
   }
 
@@ -78,8 +78,11 @@
     max-width:800px;
   }
 
+.home-sidebar{
+    display:250px;
+  }
 
-  /*
+  /* 250px 可删----
   **************************
   Portfolio Grid
   **************************
@@ -104,7 +107,7 @@
 }
 
 
-@media all and (max-width: 1023px) and (min-width: 769px) {
+@media all and (max-width: 1023px) and (min-width: 769px) {  /*------3小----- */
 
 
   header.boxed .header-margin{
@@ -171,7 +174,7 @@
 
 
 
-@media all and (max-width: 768px) and (min-width: 481px) {
+@media all and (max-width: 768px) and (min-width: 481px) {   /*------2小----- */
 
 
   header.boxed .header-margin{
@@ -208,13 +211,25 @@
   }
   
   ul.header-nav{
-    width:50%;
-  
+    width:370px;
   }
-  
+
+.content .text-intro h1{
+        font-size: 30px;
+    line-height: 50px;
+    }
+    
+header .logo > a{
+        font-size: 18px;
+        line-height: 50px;
+        padding-right: 5px;
+    }
+ 
   header li > a{
-    padding-right: 15px;
+    padding-right: 5px;
     padding-left: 15px;
+      font-size: 10px;
+      line-height: 50px;
   }
  
   .one-column, .two-column{
@@ -237,8 +252,8 @@
     display:block;
   }
 
-  header.boxed{
-    display:none !important;
+ header.boxed{
+    display:block;
   }  
   
   #footer-left{text-align:center;}
@@ -266,7 +281,7 @@
 }
 
 
-@media all and (max-width: 480px) and (min-width: 320px) {
+@media all and (max-width: 480px) and (min-width: 320px) {   /*------最小----- */
 
 
   header.boxed .header-margin{
@@ -324,17 +339,36 @@
     margin-bottom:100px;
   }
   
-  header.boxed{
+  /*header.boxed{
     display:none !important;
-  }  
-  
-  #footer-left{text-align:center;}
-  
-  .content .text-intro h1{
-    font-size:33px; 
-    line-height:50px;
+      
+  } */
+
+.content .text-intro h1{
+        font-size: 30px;
+    line-height: 50px;
+    }
+    
+ul.header-nav{
+    width:250px;
+    
   }
 
+header .logo > a{
+        font-size: 18px;
+        line-height: 50px;
+        padding-right: 5px;
+    }
+ 
+  header li > a{
+    padding-right: 5px;
+    padding-left: 15px;
+      font-size: 10px;
+      line-height: 50px;
+  }
+ 
+  #footer-left{text-align:center;}
+  
   /*
   **************************
   Portfolio Grid
