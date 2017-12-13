@@ -10,6 +10,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="author" content="thomsoon.com">
   <link rel="icon" type="image/png" href="img/icon.png" />
+    
+    <link rel="stylesheet" type="text/css" href="css/multiline.css">
+    <script src="https://d3js.org/d3.v3.js" charset="utf-8"></script>
+    <script src="js/multiline.js" charset="utf-8"></script>
 
 <!--Style-->
 
@@ -56,7 +60,7 @@
 
         <div class="text-intro">
         
-          <h1>Data Visualization -- a. Hotel, b. Dogs Breeds</h1>
+          <h1>Data Visualization </h1>
           
                     
 	          <div class="one-column">
@@ -68,7 +72,7 @@
 				        <br/><br/><br/><br/><br/><br/><br/><br/>
 				        
 				         <div class="full-column">
-                        <h2>a. Design Purpose</h2>
+                        <h2>a. Hotel Operation Situation</h2>
 		            	<p>To elaborate hotel operation situation by a large quantity of visualized data.</p>
 		          		</div>
             
@@ -76,16 +80,53 @@
 				
 			                
 				        <div class="full-column">
-		            	<p>First, I divided the data into two big categories: hotel features and client features. The picture can be divided into two sections. The upper section, above the coordinates, presents four hotel features; and the lower section, which is composed of 60 separate pie charts, presents client composition in different perspectives. </p><br/><br/><p>I used the <strong>line chart</strong> for data has a tendency, like price and length of stay; <strong>pie charts (transformed pie charts)</strong> for data presented in ratio. The <strong>Column chart</strong> is only for “conventions” where the number shows up infrequently and in integers. <strong>Colors (sequential colors)</strong> are used to divide perspectives to explain client composition. The <strong>dotted line</strong> is also used to differentiate one from the other line.</p>
+		            	<!--<p>First, I divided the data into two big categories: hotel features and client features. The picture can be divided into two sections. The upper section, above the coordinates, presents four hotel features; and the lower section, which is composed of 60 separate pie charts, presents client composition in different perspectives. </p><br/><br/> -->
+                        <p>I used the <strong>line chart</strong> for data has a tendency, like price and length of stay; <strong>pie charts (transformed pie charts)</strong> for data presented in ratio. The <strong>Column chart</strong> is only for “conventions” where the number shows up infrequently and in integers. <strong>Colors (sequential colors)</strong> are used to divide perspectives to explain client composition. The <strong>dotted line</strong> is also used to differentiate one from the other line.</p>
 		          		</div>   
 				 <br/><br/><br/><br/>
 			        
 			       <div class="full-column">
-                        <h2>b. Design Purpose</h2>
+                        <h2>b01. Dogs Breeds -- Static</h2>
 		            	<p>To show dog breeds trends over the decade from 2007 to 2017 in Philadelphia.</p>
 		          		</div><br><br>
             
-				        <div align="center"><img src="img/single/dogs.jpg" width="100%"></div><br/><br/><br/><br/>
+				        <div align="center"><img src="img/single/dogs.jpg" width="90%"></div><br/><br/>
+            
+            <div class="full-column"><h2>b02. Dogs Breeds -- Dynamic</h2></div><br/><br/>
+                    <div class="chart-wrapper" id="chart-line1"></div>
+                    
+                    <script type="text/javascript">
+                    d3.csv('media/multiline_data.csv', function(error, data) {
+                    data.forEach(function (d) {
+                        d.year = +d.year;
+                        d.variableA = +d.variableA;
+                        d.variableB = +d.variableB;
+                        d.variableC = +d.variableC;
+                        d.variableD = +d.variableD;
+                        d.variableE = +d.variableE;
+                        d.variableF = +d.variableF;
+                        d.variableG = +d.variableG;
+                        d.variableH = +d.variableH;
+                    });
+
+                    var chart = makeLineChart(data, 'year', {
+                        'Labrador Retriever': {column: 'variableA'},
+                        'Labrador Mix': {column: 'variableB'},
+                        'Golden Retriever': {column: 'variableC'},
+                        'Beagle': {column: 'variableD'},
+                        'America Pitbull Terrier': {column: 'variableE'},
+                        'German Shepherd': {column: 'variableF'},
+                        'Shih Tzu': {column: 'variableG'},
+                        'Chihuahua': {column: 'variableH'}
+                    }, {xAxis: 'Years', yAxis: 'Quantity'});
+                    chart.bind("#chart-line1");
+                    chart.render();
+
+                });
+
+                </script>
+            
+            <br/><br/>
         
 					        <div class="prev-next">
 					        
