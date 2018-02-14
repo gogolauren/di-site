@@ -447,10 +447,10 @@ position:relative;
 }
 
 .content .text-intro h1{
-  font-size:43px;
+  font-size:36px;
   
   text-transform:uppercase;
-  color:#000000;
+  color:#000000 ;
   font-weight:900;
   line-height:70px;
 }
