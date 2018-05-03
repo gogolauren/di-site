@@ -387,6 +387,10 @@ position:relative;
 
 }/*new---------------------------------------*/
 
+#top-pic{
+    border-radius: 15px;
+    height:300px;
+}
 #spotlight{
   /*position:relative;
     top: 0;
@@ -599,6 +603,7 @@ li.grid-item{
   position:relative;
   float:left;
   padding:15px;
+
 }
 
 .grid-hover{
@@ -645,6 +650,7 @@ li.grid-item{
 
 li.grid-item img{
   width:360px;
+  border-radius:10px;
 }
 
 /*
