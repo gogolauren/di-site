@@ -1,29 +1,45 @@
 @media all and (max-width: 1330px) and (min-width: 1180px) {
 
   header.boxed .header-margin{
-    width:1000px;
+    width:85%；
   }
 
   .content .text-intro{
-    width:1000px;
+    width:100%；
   }
 
   .footer-margin{
-    width:1000px;
+    width:85%；
   }
 
-  .content .text-intro h1, .content .text-intro p{
-    width:75%; /*used to be 60%*/
+  .content .text-intro h1, .content .text-intro p, .content .text-intro li, .content .text-intro h2, .content .text-intro dl{
+    width:60% ; /*used to be 60%*/
+    margin: auto;
+    text-align: left;
   }
-
-  #full{
-    width:1000px;
+ 
+  .full-column-bg{
+        width:100%; 
+        float:left;
+    }  
+ 
+  .content .index-screen{
+    width: 1000px;
+    }
+  
+ .content .index-screen h1,  .content .index-screen p{
+    width:75% !important；
   }
 
   .prev-next{
-    max-width:1000px;
+    max-width:90%；
   }
 
+ 
+  #spotlight {
+      
+    width: auto; !important;
+    }
 
   /*
   **************************
@@ -51,43 +67,57 @@
 }
 
 
-@media all and (max-width: 1179px) and (min-width: 1024px) {
+@media all and (max-width: 1179px) and (min-width: 1024px) {   /*------2大----- */
 
 
   header.boxed .header-margin{
-    width:800px;
+    width:85%；
   }
 
   .content .text-intro{
-    width:800px;
+    width:100%；
   }
 
   .footer-margin{
-    width:800px;
+    width:85%；
   }
 
-  .content .text-intro h1, .content .text-intro p{
-    width:70%;
+  .content .text-intro h1, .content .text-intro p, .content .text-intro li, .content .text-intro h2{
+    width:60% ; /*used to be 70%*/
+    margin: auto;
+    text-align: left;
   }
 
+  .full-column-bg{
+        width:100%; 
+        float:left;
+    }  
+    
   #full{
-    width:800px;
+    width:100%；
   }
 
   .prev-next{
-    max-width:800px;
+    max-width:100%；
   }
 
 .home-sidebar{
     display:250px;
   }
 
+ .content .index-screen{
+    width: 850px;
+    }
+  
+ .content .index-screen h1,  .content .index-screen p{
+    width:75% !important；
+  }
   /* 250px 可删----
   **************************
   Portfolio Grid
   **************************
   */
-
+    
   #portfolio-sidebar{
 
     width: 580px !important;
@@ -111,25 +141,32 @@
 
 
   header.boxed .header-margin{
-    width:600px;
+    width:85%;
   }
 
   .content .text-intro{
-    width:600px;
-  }
-
-  .footer-margin{
-    width:600px;
-  }
-
-  .content .text-intro h1, .content .text-intro p{
     width:100%;
   }
 
+  .footer-margin{
+    width:85%;
+  }
+
+ .content .text-intro h1, .content .text-intro p, .content .text-intro li, .content .text-intro h2{
+    width:60% ; /*used to be 70%*/
+    margin: auto;
+    text-align: left;
+  }
+
+  .full-column-bg{
+        width:100%; 
+        float:left;
+    }  
+    
   #full{
     width:600px;
   }
-
+    
   .prev-next{
     max-width:600px;
   }
@@ -147,15 +184,20 @@
     padding-right: 15px;
     padding-left: 15px;
   }
- 
 
-
+.content .index-screen{
+    width: 600px;
+    }
+  
+ .content .index-screen h1,  .content .index-screen p{
+    width:75% !important；
+  }
   /*
   **************************
   Portfolio Grid
   **************************
   */
-
+ 
   #portfolio-sidebar{
 
     width:630px !important;
@@ -178,20 +220,27 @@
 
 
   header.boxed .header-margin{
-    width:400px;
+    width:85%;
   }
 
   .content .text-intro{
-    width:400px;
+    width:100%;
   }
 
   .footer-margin{
     width:400px;
   }
 
-  .content .text-intro h1, .content .text-intro p{
-    width:100% !important;
+ .content .text-intro h1, .content .text-intro p, .content .text-intro li, .content .text-intro h2{
+    width:60% ; /*used to be 70%*/
+    margin: auto;
+    text-align: left;
   }
+
+  .full-column-bg{
+        width:100%; 
+        float:left;
+    }  
 
   #full{
     width:400px;
@@ -228,7 +277,7 @@ header .logo > a{
   header li > a{
     padding-right: 5px;
     padding-left: 15px;
-      font-size: 10px;
+      font-size: 12px;
       line-height: 50px;
   }
  
@@ -257,13 +306,20 @@ header .logo > a{
   }  
   
   #footer-left{text-align:center;}
-
+  
+ .content .index-screen{
+    width: 400px;
+    }
+  
+ .content .index-screen h1,  .content .index-screen p{
+    width:75% !important；
+  }
   /*
   **************************
   Portfolio Grid
   **************************
   */
-
+ 
   #portfolio-sidebar{
 
     width:430px !important;
@@ -289,7 +345,7 @@ header .logo > a{
   }
 
   .content .text-intro{
-    width:280px;
+    width:100%;
   }
 
   .footer-margin{
@@ -298,15 +354,29 @@ header .logo > a{
   
   .footer-margin .copyright{line-height:40px;}
 
-  .content .text-intro h1, .content .text-intro p{
-    width:100% !important;
+ .content .text-intro h1, .content .text-intro p, .content .text-intro li, .content .text-intro h2{
+    width:60% ; /*used to be 70%*/
+    margin: auto;
+    text-align: left;
   }
+
+  .full-column-bg{
+        width:100%; 
+        float:left;
+    }  
 
   #full{
     width:280px;
     display:block !important;
   }
   
+ .content .index-screen{
+    width: 280px;
+    }
+  
+ .content .index-screen h1,  .content .index-screen p{
+    width:75% !important；
+  }
   .menu-index{
     display:block !important;
   }
@@ -363,7 +433,7 @@ header .logo > a{
   header li > a{
     padding-right: 5px;
     padding-left: 15px;
-      font-size: 10px;
+      font-size: 12px;
       line-height: 50px;
   }
  
@@ -374,7 +444,10 @@ header .logo > a{
   Portfolio Grid
   **************************
   */
-
+#bg{
+        width:550px;
+        left: -200px;
+    } 
   #portfolio-sidebar{
 
     width:310px !important;

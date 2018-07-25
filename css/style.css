@@ -41,7 +41,7 @@ a:focus {
 }
 
 strong{
-  font-weight:700;
+  font-weight:600;
 
 }
 
@@ -274,7 +274,7 @@ header .logo > a{
   line-height:80px;
   padding-right:20px;
   border-bottom: 1px solid #f1f1f1;
-  color: #327755;
+  color: black;
 }
 
 header .logo > a:hover{
@@ -287,7 +287,8 @@ header li{
 }
 
 header li > a{
-  font-size:13px;
+  font-size:18px;
+  font-family: 'BebasNeueBold';
   color:#c3c3c3;
   padding-right:25px;
   padding-left:25px;
@@ -354,15 +355,15 @@ CONTENT
 
 .content .text-intro .full-column dl{
     line-height:22px;
-width: 100%;
+/*width: 100%;*/
  font-size:16px;
  color:#000000;
 }/*new---------------------------------------*/
 
 .full-column p{
-width: 100% !important;
  font-size:16px !important;
  color:#000000 !important;
+ margin-top: 30px !important;
 }    /*new---------------------------------------*/
 
 .twothirds-column p{
@@ -374,12 +375,20 @@ color:#000000 !important;
 
 .content .text-intro .full-column h2{
  font-size:26px;
-font-weight:600;
+font-family: 'BebasNeueBold';
+font-weight:900;
 text-transform:uppercase;
-text-align: center;
+text-align: left;
  color: !important;
 } /*new---------------------------------------*/
 
+.full-column-bg h2{
+    font-size:26px;
+    font-family: 'BBebasNeueBold';
+    font-weight:900;
+    text-transform:uppercase;
+    text-align: left;
+}
 
 .two-in-aline { 
 width: 50%;
@@ -393,7 +402,7 @@ position:relative;
     height:300px;
     
 }
-#bg{
+.full-column-bg{
   position:relative;
   height:100%;
   z-index:-1;
@@ -403,16 +412,15 @@ position:relative;
     width:100%;
     min-width: 1000px;
     background-image: url(img/bg.png);*/
-  background-color: lightblue;
+  background-color: rgba(50,119,85,0.2);
   background-repeat: no-repeat;
   background-size: cover;
-  -webkit-background-size: cover;
-  -o-background-size: cover;
   background-position: center 0;
 }
 
-#box{
-    position:relative;
+.full-column-bg p{
+    font-size: 16px !important;
+    margin-top: 30px !important;
 }
 
 #spotlight{
@@ -441,8 +449,8 @@ position:relative;
 
 .topleft {
     position: relative;
-    top: -20px;
-    left: -40px;
+    top: -10px;
+    left: 50px;
     width:100px;
     text-align: center;
     font-weight: bolder;
@@ -454,12 +462,65 @@ position:relative;
     z-index: 99;
 }
 
+/*different bg colors --------START FROM HERE*/
+
+
+#watershed-bg{
+    background-color: #e6ebff !important;
+}
+#watershed {
+    color: #0033cc;
+}
+
+#knowhow{
+    color: saddlebrown;
+}
+
+#knowhow-bg{
+    background-color: #f1e6da !important;
+}
+
+#mac{
+    color: rebeccapurple;
+}
+
+#mac-bg{
+    background-color: #f0e6ff !important;
+}
+
+#park{
+    color: darkgreen;
+}
+#park-bg{
+    background-color:  rgba(50,119,85,0.2);
+}
+#edu{
+    color: darkorange;
+}
+
+#edu-bg{
+    background-color: #ffe0b3 !important;
+}
+
+#recipe{
+    color:#cc0000;
+}
+#recipe-bg{
+    background-color: #ffe6e6 !important;
+}
+.intro-column p{
+    font:"BebasNeueBold" !important;
+}
+
+
+/*different bg colors --------END*/
+
 .one-column p{
-  width:70% !important;
+  width:70% ;
 }
 
 .two-column p{
-  width:100% !important;
+  width:70% !important;
   font-size:16px !important;
   color:#000000 !important;
 }
@@ -470,35 +531,54 @@ position:relative;
 
 .content{
   position:relative;
-  width:1140px;
+  /*width:1140px;*/
   margin:50px auto;
 }
 
 
 .content .text-intro{
-  width: 1140px;
+  /*width: 1140px;*/
   margin-top: 150px;
   margin: 150px auto 0;
 }
+.content .index-screen{
+  margin-top: 150px;
+  margin: 150px auto 0;
+} /*INDEX PAGE SIZE ADJUST --------- HERE*/
 
 .content .text-intro h1{
-  font-size:36px;
-  
+  font-size:46px;
+  font-family:"BebasNeueBold";
   text-transform:uppercase;
-  color:#327755 ;
-  font-weight:800;
-  line-height:70px;
+  font-weight:900;
+  line-height:50px;
 }
+.content .index-screen h1{
+  font-size:46px;
+  font-family:"BebasNeueBold";
+  text-transform:uppercase;
+  font-weight:900;
+  line-height:70px;
+}  /*INDEX H1 SIZE ADJUST --------- HERE*/
 
 .content .text-intro p{
   font-size:13px;
-  color:#8d8d8d;
-  margin-top:30px;
   font-weight:400;
   line-height:22px;
   letter-spacing:1px;
-  width:40%;
+  /*color:#8d8d8d;
+    margin-top:30px;
+    width:40%;*/
 }
+.content .index-screen p{
+  font-size:13px;
+  font-weight:400;
+  line-height:22px;
+  letter-spacing:1px;
+  /*color:#8d8d8d;
+    margin-top:30px;
+    width:40%;*/
+}  /*INDEX P SIZE ADJUST --------- HERE*/
 
         .typed-cursor{
             opacity: 1;
@@ -812,3 +892,8 @@ textarea{
 }
 
 textarea:focus{background:#f4f4f4; height:250px;}
+
+@font-face {
+    font-family: "BebasNeueBold";
+    src: url("../fonts/BebasNeueBold.otf");
+}
