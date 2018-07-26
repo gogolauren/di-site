@@ -1,3 +1,73 @@
+@media all and (max-width: 2560px) and (min-width: 1331px) {
+
+  header.boxed .header-margin{
+    width:85%；
+  }
+
+  .content .text-intro{
+    width:100%；
+  }
+
+  .footer-margin{
+    width:85%；
+  }
+
+  .content .text-intro h1, .content .text-intro p, .content .text-intro li, .content .text-intro h2, .content .text-intro dl{
+    width:70% ; /*used to be 60%*/
+    margin: auto;
+    text-align: left;
+  }
+ 
+  .full-column-bg{
+        width:100%; 
+        float:left;
+    }  
+ 
+  .content .index-screen{
+    width: 1300px;
+    }
+  
+ .content .index-screen h1,  .content .index-screen p{
+    width:75% !important；
+  }
+
+  .prev-next{
+    max-width:70%；
+  }
+
+ 
+  #spotlight {
+      
+    width: auto; !important;
+    }
+
+  /*
+  **************************
+  Portfolio Grid index页面
+  **************************
+  */
+
+  #portfolio-sidebar{
+
+    width: 1010px !important;
+    padding-right: 620px;
+  }
+
+  .portfolio-grid{
+
+    width:1330px; 
+
+  }
+
+  .grid-hover, li.grid-item, li.grid-item img{
+    width:612px;
+  }
+
+
+}
+
+
+
 @media all and (max-width: 1330px) and (min-width: 1180px) {
 
   header.boxed .header-margin{
@@ -82,7 +152,7 @@
     width:85%；
   }
 
-  .content .text-intro h1, .content .text-intro p, .content .text-intro li, .content .text-intro h2{
+  .content .text-intro h1, .content .text-intro p, .content .text-intro li, .content .text-intro h2,.content .text-intro dl{
     width:60% ; /*used to be 70%*/
     margin: auto;
     text-align: left;
@@ -152,7 +222,7 @@
     width:85%;
   }
 
- .content .text-intro h1, .content .text-intro p, .content .text-intro li, .content .text-intro h2{
+ .content .text-intro h1, .content .text-intro p, .content .text-intro li, .content .text-intro h2, .content .text-intro dl{
     width:60% ; /*used to be 70%*/
     margin: auto;
     text-align: left;
@@ -231,7 +301,7 @@
     width:400px;
   }
 
- .content .text-intro h1, .content .text-intro p, .content .text-intro li, .content .text-intro h2{
+ .content .text-intro h1, .content .text-intro p, .content .text-intro li, .content .text-intro h2, .content .text-intro dl{
     width:60% ; /*used to be 70%*/
     margin: auto;
     text-align: left;
@@ -354,7 +424,7 @@ header .logo > a{
   
   .footer-margin .copyright{line-height:40px;}
 
- .content .text-intro h1, .content .text-intro p, .content .text-intro li, .content .text-intro h2{
+ .content .text-intro h1, .content .text-intro p, .content .text-intro li, .content .text-intro h2, .content .text-intro dl{
     width:60% ; /*used to be 70%*/
     margin: auto;
     text-align: left;
