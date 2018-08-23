@@ -106,7 +106,7 @@ HOME SECTION
 	height: 100vh;
 	min-height: 568px;
 	max-height: 1050px;
-	background: linear-gradient( rgba(19, 19, 22, 0.5), rgba(19, 19, 22, 0.5)), url('../img/dixiao.jpg');
+	background: linear-gradient( rgba(19, 19, 22, 0.5), rgba(19, 19, 22, 0.5)), url('dixiao.jpg');
 	background-position: top left;
 	background-repeat: no-repeat;
 	background-size: cover;
